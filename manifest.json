@@ -1,14 +1,20 @@
 {
   "manifest_version": 2,
   "name": "Cool example",
+  "content_scripts": [
+    {
+      "matches": ["https://www.xero.com/au/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ],
   "description": "A really cool example",
   "version": "1.0",
   "browser_action": {
     "default_icon": {
 			"19": "images/icons/19.png",
 			"38": "images/icons/38.png"
-		},
-    "default_popup": "popup.html"
+		}
   },
   "icons": {
 		"16": "images/icons/16.png",
@@ -17,5 +23,5 @@
 		"64": "images/icons/64.png",
 		"128": "images/icons/128.png"
 	},
-  "permissions": ["tabs", "<all_urls>"]
+  "permissions": ["activeTab","tabs", "<all_urls>"]
 }

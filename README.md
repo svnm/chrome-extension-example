@@ -1,2 +1,2 @@
-# chrome-extensione-example
+# chrome-extension-example
 A simple chrome extension

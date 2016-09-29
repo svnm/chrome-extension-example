@@ -5,9 +5,7 @@ function injectTheScript() {
 }
 
 /* on click the icon popup */
-document.addEventListener("DOMContentLoaded", function(event) {
-  injectTheScript()
-});
+injectTheScript()
 
 /* on click of the popups test_button  */
 document.getElementById('test_button').addEventListener('click', injectTheScript);
